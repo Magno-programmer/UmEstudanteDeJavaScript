@@ -1,0 +1,31 @@
+body{
+    background-color: #000;
+}
+#titulo{
+    font-family: cursive;
+    font-size: 3rem;
+    color: #750;
+    text-shadow: 2px 2px rgb(100, 100, 100);
+    position: relative;
+    top: -115px;
+}
+
+.tudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.tudo #imagem{
+    opacity: 0.0274;
+}
+
+#ligarDesligar{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(30, 134, 0);
+    position: relative;
+    top: 80px;
+}
