@@ -11,6 +11,7 @@ function on(){
         lampada.style.height ='215px';
         turnOnOff.textContent = 'Desligar';
     }
+    turnOnOff.style.backgroundColor = 'rgb(255, 0, 0)';
 }
 
 function off(){
@@ -22,6 +23,7 @@ function off(){
         lampada.style.height ='215px';
         turnOnOff.textContent = 'Ligar';
     }
+    turnOnOff.style.backgroundColor = 'rgb(30, 124, 0)';
     
 }
 
@@ -32,6 +34,7 @@ function onOff(){
         off();
     }
 }
+
 
 function lampquebrada(){
     return lampada.src.indexOf('quebrada') > -1;
