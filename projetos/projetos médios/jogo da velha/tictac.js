@@ -25,19 +25,26 @@ const tictac = {
         [2, 4, 6],
     ],
 
-    equal_simbol: function(simbol){
-        for(i in this.win_senquence){
-            if(this.board)
+    equal_simbol: function( simbol ){
+        for( i in this.win_senquence ){
+            if(this.board [ this.win_senquence[i][0] ] == simbol && 
+            this.board [ this.win_senquence[i][1] ] == simbol &&
+            this.board [ this.win_senquence[i][2] ] == simbol ){
+                   return i;
+                   console.log('sequencia vencedora' + i);
+                }        
         }
+        return -1;
     },
+        
 
-    make_play: function(position){
+    make_play: function ( position ){
         if(this.gameover) return false;
         if(this.board[position] === ''){
             this.board[position] = this.simbols.opition [this.simbols.muda_index]
         }
         this.draw();
-
+        
         this.simbols.change();
 
     },
