@@ -1,0 +1,19 @@
+.jogo{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #7916;
+    color: #000;
+    border-radius: 20px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.jogo > div{
+    border-radius: 20px;
+    border: 3px solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font: bold 4rem serif;
+}
